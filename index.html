@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>WEB PORTFOLIO</title>
+</head>
+<body>
+    <div data-scroll-container >
+        <div  data-scroll-section class="main">
+            <div class="title" data-scroll data-scroll-speed="-8" data-scroll-position="top"><span>ALEXANDR AVAKYAN</span><span>LXNDR</span></div>
+            <div class="main-title" data-aos="fade-up" data-aos-duration="2000">
+                <span data-scroll data-scroll-speed="3" data-scroll-position="top">WEB</span>
+                <span data-scroll data-scroll-speed="2" data-scroll-position="top" >DEVELOPER</span>
+                <span data-scroll data-scroll-speed="4" data-scroll-position="top" >PORTFOLIO</span>
+            </div>
+        </div>
+    <div data-scroll-section class="navigation">
+        <h3>Hello my name is Alexandr and this is my quiet simple portfolio web page. Here you can find links on some of my projects. </h3>
+        <div class="nav">
+            <div onclick="location.href='#about'; window.location.reload();"><span>01. About </span> <span class="nav-part">↓</span></div>
+            <div onclick="location.href='#projects'; window.location.reload();"><span class="nav-part">02. Projects </span> <span class="nav-part">↓</span></div>
+            <div onclick="location.href='#contacts'; window.location.reload();"><span class="nav-part">03. Contacts </span> <span class="nav-part">↓</span></div>
+        </div>
+    </div>
+    <div class="about" id="about" data-scroll-section>
+        <span>
+            01.</br>
+            ABOUT
+        </span>
+        <img src="./ph.jpg" alt="me-lol" id="me" data-scroll data-scroll-speed="5" >
+    </div>
+    <div class="about" data-scroll-section>
+        <span >I'M JUNIOUR WEB DEVELOPER FROM RUSSIA.</br>
+        MY MISSION IS CREATING FUNCIONAL AND LOGICALLY DONE WEB INTERFACES AND APPLICATIONS FOR YOU.</span>
+        <div>
+        <h1>Skills</h1>
+        <div>
+            <span>HTML / CSS</span>
+            <span>JAVASCRIPT</span>
+            <span>REACT / REDUX</span>
+            <span>FIGMA</span>
+        </div>
+    </div>
+    </div>
+    <div class="projects" data-scroll-section >
+        <span id="projects">
+            02.</br>
+            PROJECTS
+        </span>
+        <div data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" onclick="location.href=`https://yeltsinforever.github.io/`;">
+            <img src="./PC.jpg" alt="shop" >
+            <h5>Computer Store (Cart App)</h5>
+            <span>REACT / REDUX</span>
+        </div>
+        <div data-scroll data-scroll-speed="2" onclick="location.href=`https://yeltsinforever.github.io/CRAZYCalc/`;">
+            <img src="./Calculator.PNG" alt="shop">
+            <h5>Calculator</h5>
+            <span>JAVASCRIPT</span>
+        </div>
+        <div data-scroll data-scroll-speed="4" onclick="location.href=`https://yeltsinforever.github.io/Working/`; " >
+            <img src="./shop.jpg" alt="shop">
+            <h5>LANDING PAGE</h5>
+            <span>HTML / CSS</span>
+        </div>
+        <div class="contacts-title"data-scroll data-scroll-speed="1">GET IN TOUCH</div>  
+    </div>
+    <div class="contacts" id="contacts" data-scroll-section>
+        <span>03. <br/> CONTACTS </span>
+        <div>
+           <h2>Check out my contact links</h2>
+           <span>Follow my to projects on github or give me a work to do!</span>
+           <div onclick="location.href=`https://github.com/YeltsinForever`;"> GITHUB <span class="arrow">↓</span></div> 
+           <div onclick="location.href=`https://sashatyu12@gmail.com`;"> E-MAIL <span class="arrow">↓</span></div> 
+           <div onclick="location.href=`https://t.me/Alexandernetblinsasha`;"> TELEGRAM <span class="arrow">↓</span></div> 
+        </div>
+    </div>
+</div>
+    <script>
+        AOS.init(); 
+    const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+    });
+    </script>
+</body>
+</html>
